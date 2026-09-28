@@ -416,7 +416,7 @@ export default function App() {
 
         {/* ABOUT */}
         <section id="about" className="scroll-mt-24 border-t border-hairline py-24">
-          <div className="mx-auto max-w-[760px]">
+          <div className="max-w-[760px]">
             <SectionLabel>About Me</SectionLabel>
             <div className="mt-10 space-y-6 text-[16px] leading-[1.8] text-ink-soft sm:text-[17px]">
               <p className="text-[19px] leading-[1.6] text-ink sm:text-[21px]">
