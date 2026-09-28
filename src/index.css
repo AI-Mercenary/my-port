@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap');
+@import 'tailwindcss';
+
+@theme inline {
+  --color-bg: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-ink: var(--c-ink);
+  --color-ink-soft: var(--c-ink-soft);
+  --color-accent: var(--c-accent);
+  --color-accent-hover: var(--c-accent-hover);
+  --color-on-accent: var(--c-on-accent);
+  --color-hairline: var(--c-hairline);
+  --color-tagbg: var(--c-tagbg);
+  --color-chip: var(--c-chip);
+  --color-chip-ink: var(--c-chip-ink);
+
+  --font-display: "Syne", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  --c-bg: #141517;
+  --c-surface: #1b1c1f;
+  --c-ink: #e8e6e1;
+  --c-ink-soft: #a09e98;
+  --c-accent: #8aa7de;
+  --c-accent-hover: #a9c0ea;
+  --c-on-accent: #111317;
+  --c-hairline: #2c2d31;
+  --c-tagbg: #1f2633;
+  --c-chip: #e9e8e4;
+  --c-chip-ink: #1c1c1c;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--c-accent);
+  color: var(--c-on-accent);
+}
